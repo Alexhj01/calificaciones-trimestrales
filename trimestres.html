@@ -158,7 +158,7 @@
         });
 
         //Agregar un evento al boton guardar
-        
+
         botonGuardar.addEventListener("click", () => {
             //Obtener los datos del formulario
             const nombre = formulario.nombre.value;
@@ -176,6 +176,12 @@
             if(editStatus){
                 // Actualizar los datos del trimestre
                 actualizarTrimestre(id, datos);
+
+                //Cambiar la bandera a false
+                editStatus = false;
+                id = '';
+                // Resetear el id
+                id = '';
             }else{
                 // Guardar los datos en el servidor
                 guardarTrimestre(datos);
