@@ -26,7 +26,7 @@ export default defineConfig({
   },
 
   server: {
-    host: '192.168.1.21'
+    host: '192.168.103.138'
   },
 
   plugins: []
